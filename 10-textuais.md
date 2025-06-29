@@ -123,52 +123,12 @@ A execução ocorrerá em ambiente computacional misto, utilizando notebook pess
 
 > **Nota:** O cronograma abaixo parte do pressuposto de que certos insumos técnicos — como embeddings vetoriais das obras históricas e etapas de pré-processamento — estão sendo desenvolvidos paralelamente por integrantes da equipe técnica (especialmente Maiko Nunes, Giovanna Ramalho e Eduardo Goulart). O autor assume a integração desses artefatos nos módulos sob sua responsabilidade, sem duplicar esforços já em curso.
 
-```mermaid
-gantt
-  title Cronograma ajustado — Projetos I & II
-  dateFormat  YYYY-MM-DD
-  excludes    weekends
-
-  %% ───────── 2025.1 ─────────
-  section Introdução a Projetos (2025.1)
-  Leitura papers fundacionais RAG:r0,           2025-03-20, 4d
-  PoC-0: RAG com prompt fixo:p0,                2025-03-24, 2d
-  Caps. 4–7 Fernández Sebastián:t0,             2025-03-25, 28d
-  PoC: retrieval + LLM:t2,                      2025-04-15, 15d
-  Estado da arte (metáforas + NLP):t3,          2025-04-01, 90d
-  Base estruturada Metaphor Classifier:c1,      2025-04-20, 71d
-  Redação Projeto I:d1,                         2025-06-01, 75d
-  milestone Entrega Projeto I:d1m,              2025-08-15, 0d
-
-  %% ───────── 2025.2 ─────────
-  section Projeto I (2025.2)
-  Receber embeddings (Eduardo):emb,             2025-07-31, 0d
-  Receber doc de categorias (Franciele):cat,    2025-08-15, 0d
-
-  Implementação do Metaphor Classifier:r1,      2025-08-01, 45d
-  Expansão Dataset-B + ajuste de regras:r1b,    2025-09-15, 30d
-  Avaliação QuantEval:qeval,                    2025-10-15, 15d
-  Desenvolvimento do RAG (justificativas):r2,   2025-10-01, 45d
-  Redação Projeto II:d2,                        2025-10-01, 75d
-  milestone Entrega técnica pipeline:pipe,      2025-10-31, 0d
-  milestone Entrega Projeto II:d2m,             2025-12-15, 0d
-
-  %% ───────── Recesso ─────────
-  section Recesso produtivo (2025–2026)
-  Curadoria de logs & falhas:log,               2025-12-16, 25d
-  Organização outputs & figuras:docprep,        2026-01-11, 25d
-  Planejamento redação final:plano,             2026-02-10, 10d
-
-  %% ───────── 2026.1 ─────────
-  section Projeto II (2026.1)
-  Redação versão completa do TCC:d3,            2026-03-01, 90d
-  Janela para retorno da banca:fbk,             2026-05-30, 10d
-  Preparação defesa (slides, ensaios):def,      2026-05-15, 38d
-  Defesa pública (janela oficial):fin,          2026-06-23, 19d
-  milestone Encerramento Projeto II:enc,        2026-06-22, 0d
-  Ajustes pós-defesa + ABNT:adj,                2026-07-12, 3d
-  milestone Depósito BU/UFSC:deposito,          2026-07-15, 0d
-```
+\begin{figure}[H]
+  \centering
+  \includegraphics[height=0.7\textheight,keepaspectratio]{assets/gantt.png}
+  \caption{Figura 1 – Diagrama de Gantt}
+  \label{fig:gantt}
+\end{figure}
 
 ## **Custos**
 

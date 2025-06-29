@@ -1,0 +1,36 @@
+\documentclass[12pt]{abntex2}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{lmodern}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{graphicx}
+
+\setmainfont{Liberation Serif}
+
+\title{$title$}
+\author{$for(author)$$author$$sep$ \and $endfor$}
+\orientador{$advisor$}
+\coorientador{$coadvisor$}
+\instituicao{$institution$}
+\local{$city$}
+\data{$date$}
+
+\begin{document}
+
+\imprimircapa
+\imprimirfolhaderosto
+
+\begin{resumo}
+$abstract$
+
+\textbf{Palavras-chave}: $for(keywords)$$keywords$$sep$; $endfor$
+\end{resumo}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+$body$
+\end{document}
