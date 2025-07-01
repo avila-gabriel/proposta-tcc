@@ -1,0 +1,26 @@
+% Capa
+\imprimircapa
+
+% Folha de rosto
+\imprimirfolhaderosto*{}
+
+% Folha de aprovação
+\include{beforetext/folhadeaprovacao}
+
+% Resumo
+\include{beforetext/resumos}
+
+% Lista de abreviaturas e siglas
+\include{beforetext/siglas}
+\include{beforetext/simbolos}
+\cleardoublepage
+\listoffigures
+\cleardoublepage
+\listoftables
+
+% Sumário
+\cleardoublepage
+\hypersetup{hidelinks}
+\addtotextpreliminarycontent{\contentsname}
+\tableofcontents
+

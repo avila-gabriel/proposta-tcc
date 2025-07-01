@@ -1,0 +1,110 @@
+\addtotextpreliminarycontent{\lang{Approval Sheet}{Folha de Aprovação}}
+
+\begin{folhadeaprovacao}
+
+    \begin{center}
+        {\imprimirautor}
+
+        \vspace{1em}
+        {\ABNTEXchapterfont\bfseries\MakeUppercase{\imprimirtitulo}%
+        \ifnotempty{\imprimirsubtitulo}{: \imprimirsubtitulo}}
+
+        \vspace{2em}
+        \begin{minipage}{\textwidth}
+            \lang{
+                This \imprimirtipotrabalho~was presented to obtain the degree of \imprimirformacao%
+                \ifnotempty{\imprimirarea}{, in the area of \imprimirarea} in the course \imprimirprograma.%
+                Approved on \imprimirdata.
+            }{
+                Este(a) \imprimirtipotrabalho~foi apresentado(a) para obtenção do título de \imprimirformacao%
+                \ifnotempty{\imprimirarea}{, na área de concentração de \imprimirarea} no curso de \imprimirprograma.%
+                Aprovado em \imprimirdata.
+            }
+        \end{minipage}
+    \end{center}
+
+    \vspace{2em}
+
+    % Only show if coordinator is different from advisor
+    \ifthenelse{\equal{\imprimircoordenador}{\imprimirorientador}}{}{%
+        \assinatura{
+            \textbf{\imprimircoordenador} \\
+            \lang{Supervisor professor}{Professor responsável pelo trabalho}
+        }
+    }
+
+    \assinatura{
+        \textbf{\imprimirorientador} \\
+        \imprimirorientadorRotulo
+    }
+
+    \ifnotempty{\imprimircoorientador}{%
+        \assinatura{
+            \textbf{\imprimircoorientador} \\
+            \imprimircoorientadorRotulo
+        }
+    }
+
+\end{folhadeaprovacao}
+\vspace*{1cm}
+\noindent
+{\Large\bfseries Avaliação da Proposta de TCC\par}
+\vspace{0.5cm}
+
+\small
+\noindent
+\textbf{Instruções para preenchimento pelo \underline{orientador do trabalho}:}\\
+Para cada critério avaliado, assinale um X na coluna “Sim” apenas se considerado aprovado.
+Caso contrário, indique as alterações necessárias na coluna “Observação”.
+
+\vspace{0.5cm}
+\begin{tabularx}{\textwidth}{|p{0.45\textwidth}|
+                                >{\centering\arraybackslash}p{0.07\textwidth}|
+                                >{\centering\arraybackslash}p{0.07\textwidth}|
+                                >{\centering\arraybackslash}p{0.07\textwidth}|
+                                >{\centering\arraybackslash}p{0.07\textwidth}|
+                                X|}
+  \hline
+  \textbf{Critérios} & \textbf{Sim} & \textbf{Parcial} & \textbf{Não} & \textbf{N/A} & \textbf{Observação} \\
+  \hline
+  1. O trabalho é adequado para um TCC no CCO/SIN (relevância / abrangência)? & & & & & \\
+  \hline
+  2. O título do trabalho é adequado? & & & & & \\
+  \hline
+  3. O tema de pesquisa está claramente descrito? & & & & & \\
+  \hline
+  4. O problema/hipóteses estão identificados? & & & & & \\
+  \hline
+  5. A relevância da pesquisa é justificada? & & & & & \\
+  \hline
+  6. Os objetivos descrevem claramente o que se pretende alcançar? & & & & & \\
+  \hline
+  7. O método proposto é adequado aos objetivos? & & & & & \\
+  \hline
+  8. O cronograma é coerente? & & & & & \\
+  \hline
+  9. Custos identificados (se houver) e financiamento previstos? & & & & & \\
+  \hline
+  10. Todas as pessoas envolvidas foram identificadas? & & & & & \\
+  \hline
+  11. Formas de comunicação definidas? & & & & & \\
+  \hline
+  12. Riscos potenciais identificados? & & & & & \\
+  \hline
+  13. Caso envolva software/empresa, há declaração (Anexo 3) de ciência? & & & & & \\
+  \hline
+\end{tabularx}
+
+\vspace{1cm}
+
+% Avaliação final
+\noindent
+\begin{tabularx}{\textwidth}{|X|X|}
+  \hline
+  \textbf{Avaliação Final} & $\Box$ Aprovado \quad\quad $\Box$ Não Aprovado \\
+  \hline
+  \textbf{Professor Responsável} & (Nome)\hfill(Data)\hfill(Assinatura) \\
+  \hline
+  \textbf{Orientador Externo (se houver)} & (Nome)\hfill(Data)\hfill(Assinatura) \\
+  \hline
+\end{tabularx}

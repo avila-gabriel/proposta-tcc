@@ -1,0 +1,27 @@
+% Portuguese Abstract
+\cleardoublepage\phantomsection
+\addtotextpreliminarycontent{Resumo}
+\begin{otherlanguage*}{brazil}
+\begin{resumo}[Resumo]
+    A classificação automática de metáforas em contextos históricos representa um desafio relevante no campo do Processamento de Linguagem Natural (PLN), dada a natureza subjetiva, contextual e evolutiva das expressões metafóricas. Enquanto a maior parte dos trabalhos em PLN concentra-se na detecção de metáforas (classificação binária), este projeto parte de um pipeline onde metáforas já foram previamente identificadas, com o objetivo de classificá-las em categorias históricas específicas baseadas no referencial de Fernández Sebastián (2024). Ao fazê-lo, o projeto visa colaborar com a construção e expansão de um dataset diacrônico voltado à análise interpretativa de metáforas políticas e sociais em fontes textuais históricas. O trabalho é dividido em dois módulos principais. O primeiro, denominado \textit{Metaphor Classifier}, realiza a classificação das metáforas detectadas e expande o corpus por meio da recuperação de ocorrências semanticamente similares em obras históricas vetorizadas. Já o segundo módulo, baseado no paradigma \textit{Retrieval-Augmented Generation} (RAG), é responsável por gerar justificativas textuais embasadas para cada classificação atribuída, citando trechos das fontes históricas como evidência e articulando-os conceitualmente às categorias históricas definidas. A metodologia adota uma abordagem mista. A dimensão quantitativa será aplicada na avaliação de classificações automatizadas (via métricas como \textit{precision}, \textit{recall} e \textit{F1-score}, quando pertinente), enquanto a dimensão qualitativa garantirá a coerência conceitual dos pares gerados (\textit{metáfora, evidência, categoria}), com apoio de uma equipe interdisciplinar de historiadores. Como resultados esperados, prevê-se a entrega de um pipeline funcional e documentado capaz de gerar pelo menos 100 pares validados de metáforas com evidências e classificações históricas, além de justificativas explicativas geradas via LLMs. Este recurso poderá servir de base empírica para estudos historiográficos e fomentar novas hipóteses sobre o uso e transformação de metáforas no discurso político e social ao longo do tempo. O projeto contribui, assim, não apenas com a inovação metodológica na interseção entre história e PLN, mas também com a promoção de maior transparência e rastreabilidade na interpretação automatizada de linguagem metafórica.
+
+    \imprimirpalavraschave{Palavras-chave}{\begin{inparaitem}[]\palavraschaveportugues\end{inparaitem}}
+\end{resumo}
+\end{otherlanguage*}
+
+% English Abstract
+\cleardoublepage\phantomsection
+\addtotextpreliminarycontent{Abstract}
+\begin{otherlanguage*}{english}
+\begin{resumo}[Abstract]
+    The automatic classification of metaphors in historical contexts poses a significant challenge in the field of Natural Language Processing (NLP), due to the subjective, contextual, and evolving nature of metaphorical expressions. While most NLP work focuses on metaphor detection (binary classification), this project begins from a pipeline in which metaphors have already been identified, with the goal of classifying them into specific historical categories based on the framework proposed by Fernández Sebastián (2024). In doing so, the project aims to support the construction and expansion of a diachronic dataset focused on the interpretive analysis of political and social metaphors in historical textual sources.
+
+    The work is divided into two main modules. The first, called the \textit{Metaphor Classifier}, performs the classification of detected metaphors and expands the corpus by retrieving semantically similar occurrences in vectorized historical works. The second module, based on the \textit{Retrieval-Augmented Generation} (RAG) paradigm, is responsible for generating textual justifications for each assigned classification, quoting excerpts from historical sources as evidence and conceptually linking them to the defined historical categories.
+
+    The methodology follows a mixed approach. The quantitative dimension will be applied in the evaluation of automated classifications (using metrics such as \textit{precision}, \textit{recall}, and \textit{F1-score}, where applicable), while the qualitative dimension will ensure the conceptual coherence of the generated triplets (\textit{metaphor, evidence, category}), with support from an interdisciplinary team of historians. The project also adopts principles of modular and iterative development, allowing flexibility in adapting to data and tools delivered by other members of the research group.
+
+    As expected outcomes, the project aims to deliver a functional and documented pipeline capable of producing at least 100 validated metaphor pairs with historical classifications and supporting justifications generated via LLMs. This resource may serve as an empirical foundation for historiographical studies and stimulate new hypotheses about the use and transformation of metaphors in political and social discourse over time. The project thus contributes not only to methodological innovation at the intersection of history and NLP, but also to promoting greater transparency and traceability in the automated interpretation of metaphorical language.
+
+    \imprimirpalavraschave{Keywords}{\begin{inparaitem}[]\palavraschaveingles\end{inparaitem}}
+\end{resumo}
+\end{otherlanguage*}
