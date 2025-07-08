@@ -29,7 +29,9 @@ avançadas dos modelos grandes de linguagem (LLMs) com mecanismos de
 recuperação automatizada de contextos históricos e literários
 relevantes. Espera-se, assim, contribuir para uma compreensão mais
 fundamentada e transparente de metáforas em corpora históricos,
-oferecendo suporte empírico para hipóteses historiográficas.
+oferecendo suporte empírico para hipóteses historiográficas. O RAG cumpre 
+a função central do trabalho de prova historiográfico, atuando em sua 
+função referencial \citep{lewis2020retrieval}.
 
 \section{\textbf{Objetivos}}{Objetivos}\label{objetivos}
 
@@ -40,8 +42,8 @@ Desenvolver e integrar dois módulos: o \emph{Metaphor Classifier},
 responsável por atribuir categorias históricas a metáforas previamente
 detectadas e expandir o conjunto de exemplos por meio de recuperação
 semântica de ocorrências análogas; e o \emph{RAG}, voltado à geração de
-justificativas textuais embasadas, citando evidências históricas
-relevantes para cada classificação.
+justificativas textuais embasadas, citando e recuperando evidências 
+históricas relevantes para cada classificação.
 
 \subsection{\texorpdfstring{\textbf{Objetivos
 Específicos}}{Objetivos Específicos}}\label{objetivos-especuxedficos}
@@ -149,8 +151,7 @@ restrições}\label{premissas-restriuxe7uxf5es}
 \begin{itemize}
 \tightlist
 \item
-  VLab-UFSC disponível com GPU/CPU até \textbf{dez 2025}; 2026 não
-  requer execução de código.\\
+  VLab-UFSC disponível com GPU/CPU até \textbf{julho/2026}.\\
 \item
   Textos históricos em domínio público; nenhuma licença adicional é
   necessária.\\
@@ -225,10 +226,12 @@ resumido}\label{cronograma-tuxe9cnico-resumido}
     Planejamento da redação final do TCC
   \end{itemize}
 \item
-  \textbf{mar--mai 2026}
+  \textbf{mar--jun 2026}
 
   \begin{itemize}
   \tightlist
+  \item
+    Versão revisada(foco em precisão) dos Scripts
   \item
     Redação da versão completa do TCC final
   \end{itemize}
@@ -254,8 +257,7 @@ resumido}\label{cronograma-tuxe9cnico-resumido}
   \end{itemize}
 \end{itemize}
 
-\section{\textbf{Método de
-Pesquisa}}{Método de Pesquisa}\label{muxe9todo-de-pesquisa}
+\section{\textbf{Método de Pesquisa}}{Método de Pesquisa}\label{muxe9todo-de-pesquisa}
 
 Adotar-se-á uma abordagem mista, combinando métodos quantitativos e
 qualitativos. A dimensão \textbf{quantitativa} será utilizada sempre que
@@ -342,9 +344,9 @@ Humanos}}{Recursos Humanos}\label{recursos-humanos}
     Jean Carlo Rossa Hauck & Coorientador/Responsável \\
     Chiru Stefan & Mentor técnico \\
     Patricia Biral Varela & Pesquisadora em História (aprendiz técnica) \\
-    Maiko Ademir Nunes & Desenvolvedor de Pipeline \\
-    Giovanna Ramalho & Desenvolvedora de Pipeline \\
-    Eduardo Peres Luckner Goulart & Desenvolvedor de Pipeline \\
+    Maiko Ademir Nunes & Desenvolvedor Junior \\
+    Giovanna Ramalho & Engenharia de Software \\
+    Eduardo Peres Luckner Goulart & Desenvolvedor Junior \\
     Franciele Dias da Silva & Pesquisadora em História com função
     organizacional \\
     Mateus Freitas Borsatti & Pesquisador em História \\
@@ -353,14 +355,14 @@ Humanos}}{Recursos Humanos}\label{recursos-humanos}
     Isabella Stersa de Oliveira & Pesquisadora em História \\
     Gilson Mateus Pinto Júnior & Pesquisador em História \\
     Leonardo Nogueira Aucar & Pesquisador em História \\
-    Gabriela Graudenz Muller & Pesquisadora em História \\
+    Gabriela Graudenz Muller & Linguística \\
     Willian Meurer Welter & Pesquisador em História \\
     Danillo Melo da Fonseca & Pesquisador em História (aprendiz técnico) \\
     Alysson Julio Risso da Silva & Pesquisador em História \\
     Marcel Vieira Silva & Pesquisador em História (aprendiz técnico) \\
-    Thamiris Fátima dos Santos & Pesquisadora em História \\
+    Thamiris Fátima dos Santos & Desenvolvedor Front-End \\
     Renata da Conceição Aquino da Silva & Pesquisadora em História \\
-    Fernanda Lyrio Heinzelmann & Pesquisadora em História \\
+    Fernanda Lyrio Heinzelmann & Psicologia \\
     Breno Ampáro & Pesquisador em História \\
     Gabriel Choucair Garcia & Pesquisador em História \\ \bottomrule
   \end{tabularx}
@@ -381,8 +383,8 @@ Humanos}}{Recursos Humanos}\label{recursos-humanos}
                                     >{\RaggedRight\arraybackslash}X@{}}
     \toprule
     O que será comunicado & Por quem & Para quem & Meio & Frequência \\ \midrule
-    Progresso técnico (pipeline, classificador, RAG) & Autor & Equipe técnica & Reunião Google Meet & Ter 14 h – 16 h semanal \\[2pt]
-    Discussões conceituais sobre categorias & Autor & Equipe de História & Reunião Google Meet & Ter 16h30 – 17h30 semanal \\[2pt]
+    Progresso técnico (pipeline, classificador, RAG) & Autor & Equipe técnica & Reunião Google Meet & Ter 14 h - 16 h semanal \\[2pt]
+    Discussões conceituais sobre categorias & Autor & Equipe de História & Reunião Google Meet & Ter 16h30 - 17h30 semanal \\[2pt]
     Dúvidas de código/ferramentas & Autor & Stefan (coorientador técnico) & WhatsApp ou reunião & Sob demanda / semanal \\[2pt]
     Entregas parciais & Autor & Orientador(es) & GitHub / reunião & Ao final de cada etapa \\[2pt]
     Integrações entre módulos & Equipe técnica & Integrador designado & WhatsApp / Discord & Quando necessário \\[2pt]
